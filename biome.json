@@ -1,0 +1,164 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.6.2/schema.json",
+  "vcs": { "enabled": true, "clientKind": "git", "useIgnoreFile": true },
+  "files": {
+    "ignoreUnknown": true,
+    "includes": [
+      "**",
+      "!node_modules",
+      "!.next",
+      "!dist",
+      "!build",
+      "!out",
+      "!src/components/ui",
+      "!contents/docs",
+      "!public/search-data",
+      "!**/*.svg",
+      "!**/*.png",
+      "!**/*.ico"
+    ]
+  },
+  "formatter": {
+    "enabled": true,
+    "formatWithErrors": false,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineEnding": "lf",
+    "lineWidth": 100,
+    "attributePosition": "auto",
+    "bracketSameLine": false,
+    "bracketSpacing": true,
+    "expand": "auto",
+    "useEditorconfig": true,
+    "includes": [
+      "**",
+      "!./node_modules",
+      "!./.pnp",
+      "!**/.pnp.*",
+      "!**/.pnpm-debug.log",
+      "!**/pnpm-lock.yaml",
+      "!./.next/",
+      "!./out/",
+      "!./build",
+      "!./dist",
+      "!**/.DS_Store",
+      "!**/*.pem",
+      "!**/.env",
+      "!**/.tmp",
+      "!**/.git",
+      "!**/.hg",
+      "!**/.pnp.*",
+      "!**/.svn",
+      "!**/.yarn/**",
+      "!**/build",
+      "!**/dist/**",
+      "!**/node_modules",
+      "!**/temp"
+    ]
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "preset": "recommended",
+      "a11y": {
+        "noSvgWithoutTitle": "off"
+      },
+      "security": {
+        "noDangerouslySetInnerHtml": "off"
+      },
+      "suspicious": {
+        "noArrayIndexKey": "off"
+      },
+      "style": {
+        "useImportType": {
+          "level": "on",
+          "options": {
+            "style": "inlineType"
+          }
+        }
+      }
+    },
+    "includes": [
+      "**",
+      "!**/.temp",
+      "!**/.*",
+      "!**/.git",
+      "!**/.hg",
+      "!**/.pnp.*",
+      "!**/.svn",
+      "!**/playwright.config.ts",
+      "!**/*.spec.ts",
+      "!**/*.test.ts",
+      "!**/tsconfig.tsbuildinfo",
+      "!**/README.md",
+      "!**/dist/",
+      "!**/.yarn/",
+      "!**/build/",
+      "!**/node_modules/",
+      "!**/temp/",
+      "!**/*.cjs"
+    ]
+  },
+  "javascript": {
+    "formatter": {
+      "jsxQuoteStyle": "double",
+      "quoteProperties": "asNeeded",
+      "trailingCommas": "es5",
+      "semicolons": "asNeeded",
+      "arrowParentheses": "always",
+      "quoteStyle": "single"
+    }
+  },
+  "html": {
+    "formatter": {
+      "indentScriptAndStyle": false,
+      "selfCloseVoidElements": "always"
+    }
+  },
+  "css": {
+    "parser": {
+      "tailwindDirectives": true
+    }
+  },
+  "overrides": [
+    {
+      "includes": ["**/package.json"],
+      "json": {
+        "formatter": {
+          "expand": "always"
+        }
+      }
+    }
+  ],
+  "assist": {
+    "enabled": true,
+    "actions": {
+      "source": {
+        "organizeImports": {
+          "level": "on",
+          "options": {
+            "groups": [
+              ":NODE:",
+              ":BUN:",
+              ["node", "node:*"],
+              ["react", "react/**"],
+              ["next", "next/**", "next-*", "next-*/**"],
+              ":PACKAGE:",
+              ":BLANK_LINE:",
+              ["**", "!:STYLE:"],
+              ":BLANK_LINE:",
+              [":STYLE:"]
+            ]
+          }
+        },
+        "useSortedAttributes": {
+          "level": "on",
+          "options": {
+            "sortOrder": "natural"
+          }
+        },
+        "useSortedInterfaceMembers": "on"
+      }
+    }
+  }
+}
