@@ -234,7 +234,7 @@ importers:
         version: 3.7.0
       tailwindcss-animate:
         specifier: ^1.0.7
-        version: 1.0.7(tailwindcss@4.3.3)
+        version: 1.0.7(tailwindcss@4.3.4)
       unified:
         specifier: ^11.0.5
         version: 11.0.5
@@ -250,7 +250,7 @@ importers:
         version: 4.3.3
       '@tailwindcss/typography':
         specifier: ^0.5.20
-        version: 0.5.20(tailwindcss@4.3.3)
+        version: 0.5.20(tailwindcss@4.3.4)
       '@types/hast':
         specifier: ^3.0.5
         version: 3.0.5
@@ -267,8 +267,8 @@ importers:
         specifier: ^3.0.3
         version: 3.0.3
       tailwindcss:
-        specifier: ^4.3.3
-        version: 4.3.3
+        specifier: ^4.3.4
+        version: 4.3.4
       tsx:
         specifier: ^4.23.15
         version: 4.23.15
@@ -2883,6 +2883,9 @@ packages:
   tailwindcss@4.3.3:
     resolution: {integrity: sha512-gOhV3P7ufE62QDGg1zVaTgCR+EtPv92k2nIhVcVKcLmxT1sUBsQGhnZj175j+MqRt4zLF7ic+sCYjfhxMxj7YQ==}
 
+  tailwindcss@4.3.4:
+    resolution: {integrity: sha512-PCJZTFFdG+sL3gvnP1Do9o6GbkvH2q0p04xSs3f7cSvmAeK+sttG+/7ncK1fdRwKFfC7n+wDDJaOMBSefkI9ow==}
+
   tapable@2.3.3:
     resolution: {integrity: sha512-uxc/zpqFg6x7C8vOE7lh6Lbda8eEL9zmVm/PLeTPBRhh1xCgdWaQ+J1CUieGpIfm2HdtsUpRv+HshiasBMcc6A==}
     engines: {node: '>=6'}
@@ -4217,10 +4220,10 @@ snapshots:
       postcss: 8.5.30
       tailwindcss: 4.3.3
 
-  '@tailwindcss/typography@0.5.20(tailwindcss@4.3.3)':
+  '@tailwindcss/typography@0.5.20(tailwindcss@4.3.4)':
     dependencies:
       postcss-selector-parser: 6.0.10
-      tailwindcss: 4.3.3
+      tailwindcss: 4.3.4
 
   '@types/d3-array@3.2.2': {}
 
@@ -5952,11 +5955,13 @@ snapshots:
 
   tailwind-merge@3.7.0: {}
 
-  tailwindcss-animate@1.0.7(tailwindcss@4.3.3):
+  tailwindcss-animate@1.0.7(tailwindcss@4.3.4):
     dependencies:
-      tailwindcss: 4.3.3
+      tailwindcss: 4.3.4
 
   tailwindcss@4.3.3: {}
+
+  tailwindcss@4.3.4: {}
 
   tapable@2.3.3: {}
 
